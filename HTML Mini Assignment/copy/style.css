@@ -1,0 +1,62 @@
+div.content{
+	height: 233px;
+	margin-top: 89px;
+	display: inline-block;
+	position: relative;
+}
+
+div.search{
+	margin: 0px;
+	width: 100%;
+	height: auto;
+}
+
+
+div.content-all{
+	width: 550px;
+}
+
+div.search input {
+	width: 100%;
+}
+li{
+	display: inline;
+	float: right;
+	margin: 20px;
+}
+a{
+	display: block;
+	background-color: white;
+}
+
+p{
+	bottom: 0;
+	width: 100%;
+	color: gray;
+	text-align: left;
+	margin-left: 24px;
+	margin-bottom: 0px;
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	color: gray;
+	text-align: left;
+}
+
+.left-footer{
+	display: inline;
+	float: left;
+	margin: 0px 5px 20px 5px;
+	color: gray;
+}
+
+.right-footer{
+	display: inline;
+	float: right;
+	margin: 20px;
+	color: gray;
+}
