@@ -1,10 +1,6 @@
-const removeFromArray = function(array,remove_item) {
-  for (var i = 0; i < array.length; i++) {
-    if (array[i] == remove_item) {
-      array.splice(array[i] - 1,1);
-    }
-  }
-  return array;
+const removeFromArray = function(array, ...args) {
+  var new_array = array.filter(num => !args.includes(num));
+  return new_array;
 }
 
 module.exports = removeFromArray
