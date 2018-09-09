@@ -1,0 +1,14 @@
+<button id="btn">Click Me Too</button>
+
+
+<script type="text/javascript">
+	function alertFunction() {
+  		alert("YAY! YOU DID IT!");
+	}
+
+
+btn.addEventListener('click', function(e){
+  e.target.style.background = 'blue'
+  alert(e.target.style.background);
+})
+</script>
