@@ -1,10 +1,13 @@
-function add () {
-	
+function add (...args) {
+	let totalSum = args.reduce((pVal,cVal) => cVal += pVal, 0);
+	return totalSum;
 }
 
-function subtract () {
-	
-}
+function subtract (...args) {
+	let totalSum = args.reduce(function(pVal,cVal){
+		return pVal - cVal;
+	});
+};
 
 function sum () {
 	
