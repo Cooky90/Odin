@@ -3,11 +3,12 @@ function add (...args) {
 	return totalSum;
 }
 
-function subtract (...args) {
-	let totalSum = args.reduce(function(pVal,cVal){
-		return pVal - cVal;
-	});
-};
+function subtract (...args){
+let sum =args.reduce((accumulator,currentValue) =>{
+	return accumulator - currentValue;
+})
+return sum;
+}
 
 function sum () {
 	
