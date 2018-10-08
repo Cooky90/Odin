@@ -28,14 +28,25 @@ function power(base, exponent){
 	var count = (exponent - 2);
 	var initialValue = (base * base);
 	while (count > 0){
-  	initialValue *= base 
+  		initialValue *= base 
     count -= 1;
 	}
   return initialValue;
 }
 
-function factorial() {
-	
+function factorial(number) {
+  var count = number;
+  var initialValue = (count * (count - 1));
+	if (count == 1 || count == 0) {
+		return 1;
+	} else {
+		count -= 2;
+		while (count > 1){
+			initialValue *= count;
+        	count -= 1;
+		}
+    return initialValue;
+	}	
 }
 
 module.exports = {
